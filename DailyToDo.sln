@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyToDo", "DailyToDo\DailyToDo.csproj", "{D51D377B-8F14-4977-B310-145411DD5068}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D51D377B-8F14-4977-B310-145411DD5068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51D377B-8F14-4977-B310-145411DD5068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51D377B-8F14-4977-B310-145411DD5068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51D377B-8F14-4977-B310-145411DD5068}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21962141-FE14-4739-AFD6-974F2BCFD4B4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿
+@Model TodoViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table>
+    <thead>
+        <tr>
+            <td>Creation Date</td>
+            <td>Description</td>
+            <td>Priority</td>
+            <td>Done</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var todo in Model.todos)
+        {
+            <tr>
+                <td>@todo.Creationdate</td>
+                <td>@todo.Description</td>
+                <td>@todo.Priority</td>
+                <td>@todo.Done</td>
+                @if (todo.Done == false)
+                {
+                <td>
+                    <form method="post" asp-action="CheckAsDone" asp-route-ID=@todo.Todo_id>
+                        <button>Mark as done</button>
+                    </form>
+                </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    @await Html.PartialAsync("AddTodoPartial", new AddTodoViewModel()); 
+</div>

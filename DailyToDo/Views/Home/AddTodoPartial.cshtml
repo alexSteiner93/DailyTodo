@@ -1,0 +1,12 @@
+﻿@model AddTodoViewModel;
+@{
+}
+
+<h2>Create new Todo</h2>
+<form asp-action="CreateToDo" method="post">
+    <label for="description">Description</label>
+    <input asp-for=@Model.Description id="description" />
+    <label  for="priority">Priority</label>
+    <input asp-for=@Model.Priority id="priority" />
+    <button type="submit">Add</button>
+</form>
